@@ -1,0 +1,67 @@
+
+@media (min-width: 768px) and (max-width: 1024px){
+    
+    .center{
+        width: 90%;
+    }
+    
+    aside{
+        width: 40%;
+        margin-right: -40%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .center{
+        width: 90%;
+        padding: 40px 0 50px;
+    }
+
+    .button{
+        width: 100%;
+    }
+
+    header{
+        padding: 30px 20px;
+    }
+
+    .logo span{
+        font-size: 20px;
+    }
+
+    /* -------- Slider ---------- */
+
+    .slider-content{
+        width: 100%;
+    }
+
+    .slider-content h1{
+        font-size: 30px;
+    }
+
+    .slider-content h2{
+        font-size: 18px;
+    }
+
+    /* --------- sections --------  */
+
+    .col-1,.col-2{
+       flex: unset;
+       width: 100%;
+    }
+
+    .bg-blue .col-2{
+        order: 2;
+    }
+    
+    .img-div{
+        padding: 30px;
+    }
+    /* --------- aside --------  */
+    aside{
+        width: 50%;
+        margin-right: -50%;
+    }
+    
+}

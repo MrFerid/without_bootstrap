@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Scope+One');
+
+/* General tags of html / General desgin */
+body{
+    padding:0;
+    margin:0;
+    font-family: "Scope One", serif;
+    font-weight: 300;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #3498db;
+    --gray-color: #999999;
+}
+
+img{
+    width: 100%;
+    border-radius: 100%;
+    border: 1px solid rgb(179, 179, 179);
+    padding: 7px;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: var(--gray-color);
+    transition: all .2s ease 0s;
+}
+a:hover{
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+p{
+    color: var(--gray-color);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.center{
+    padding: 80px 0 50px;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button{
+    background:var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* ------ header ------ */
+
+header{
+    height: 50px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color:#fff;
+    z-index: 3;
+}
+
+header a{
+    color:#fff;
+}
+
+.logo span{
+    color: var(--primary-color);
+}
+
+.menu-button{
+    cursor: pointer;
+    transition: all .2s ease 0s;
+    font-size: 15px;
+}
+
+.menu-button i{
+    padding:0 5px;
+}
+
+.menu-button:hover{
+    color: var(--primary-color);
+}
+
+/* ------ slider ------ */
+
+.slider{
+    width:100%;
+    height: 85vh;
+    background: transparent url('img/slider/1.jpg') no-repeat scroll;
+    background-size: cover;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+}
+
+.slider::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height: 85%;
+    background-color: rgba(0, 0, 0, 0.712);
+    z-index: 1;
+}
+
+.slider .button{
+    padding: 20px 30px;
+}
+
+.slider-content{
+    text-align: center;
+    z-index: 2;
+}
+
+.slider-content h1{
+    font-size: 50px;
+}
+
+.slider-content h2{
+    font-weight: 300;
+}
+
+/* ----------------- sections ------ */
+.col-1{
+    padding: 0 15px;
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-2{
+    padding: 0 15px;
+    flex: 2;
+}
+
+.img-div{
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.section-title{
+    width: 100%;
+    text-align: center;
+}
+
+.section-title h1{
+    font-size: 30px;
+}
+
+.section-title p{
+    font-size: 19px;
+}
+
+.bg-blue{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.bg-blue p {
+    color: #aed6f1;
+}
+
+.bg-blue a{
+    color: var(--primary-color);
+    background: #fff;
+}
+
+.bg-blue img{
+    background-color: transparent;
+}
+
+.bg-gray{
+    background-color: rgb(250, 250, 250);
+}
+
+/* ------ aside ------ */
+
+aside{
+    position: fixed;
+    right:0;
+    top: 0;
+    height: 100vh;
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.856);
+    z-index: 4;
+    padding: 10px;
+    margin-right: -20%;
+    transition: all .4s ease 0s;
+}
+
+aside a{
+    color: #fff;
+}
+
+aside a:hover{
+    color: var(--primary-color);
+}
+
+.close-icon i{
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+aside ul{
+    margin: 40px 0;
+    padding: 0 20px;
+    list-style: none;
+}
+
+aside ul li{
+    padding: 10px 5px;
+}
+
+aside ul li+li{
+    border-top: 1px solid rgb(63, 63, 63);
+}
+
+.aside-opened{
+    margin-right: 0;
+}
+
+/* ------ footer ------ */
+
+footer .center, .slider .center{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-group i{
+    border-radius: 100%;
+    color: var(--gray-color);
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 4px #fff, 0px 0px 0px 5px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding: 10px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+.icon-group a+a{
+    margin-left: 20px;
+}
